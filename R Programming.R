@@ -93,5 +93,13 @@ quantile(prime_shows$`IMDb rating`)
 #t.test
 t.test(prime_shows$`No of seasons available`)
 
+#Histogram
+  ggplot(prime_shows, aes(x = `IMDb rating`)) +
+  geom_histogram(binwidth = 0.5, fill = "skyblue", color = "blue", alpha = 0.7) +
+  ggtitle("Histogram of IMDb Ratings") +
+  xlab("IMDb Rating") +
+  ylab("Frequency")
+
+
 
 
